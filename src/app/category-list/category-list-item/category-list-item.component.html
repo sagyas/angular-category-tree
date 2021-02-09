@@ -1,0 +1,44 @@
+<button (click)="onItemToggle()" mat-mini-fab class="button">
+  <span *ngIf="!expanded; else collapse">+</span>
+  <ng-template #collapse>
+    <span>-</span>
+  </ng-template>
+</button>
+
+<span>
+  {{ item.node_name }}
+</span>
+<input
+  matInput
+  type="text"
+  class="text-input"
+  [(ngModel)]="nameInput"
+  placeholder="Insert name"
+  class="spaced"
+/>
+<button
+  (click)="onAddItem()"
+  mat-mini-fab
+  color="primary"
+  [disabled]="nameInput == ''"
+  class="spaced"
+>
+  <mat-icon>add</mat-icon>
+</button>
+<button
+  (click)="onRenameItem()"
+  mat-mini-fab
+  color="primary"
+  [disabled]="nameInput == ''"
+  class="spaced"
+>
+  <mat-icon>edit</mat-icon>
+</button>
+<button (click)="onDeleteItem()" mat-mini-fab color="warn" class="spaced">
+  <mat-icon>delete</mat-icon>
+</button>
+<ul *ngIf="expanded">
+  <div *ngFor="let child of item.children">
+    <app-category-list-item [item]="child"> </app-category-list-item>
+  </div>
+</ul>

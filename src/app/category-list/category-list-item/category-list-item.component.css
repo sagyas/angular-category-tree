@@ -1,0 +1,17 @@
+.button {
+  background-color: rgb(96, 124, 133);
+}
+
+span {
+  font-weight: bolder;
+  font-size: large;
+}
+
+.spaced {
+  margin-right: 2px;
+}
+
+.text-input {
+  width: 100px;
+  margin-left: 20px;
+}

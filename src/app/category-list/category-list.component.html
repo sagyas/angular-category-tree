@@ -1,0 +1,26 @@
+<div>
+  <input
+    matInput
+    type="text"
+    [(ngModel)]="nameInput"
+    placeholder="Add new category"
+  />
+  <button
+    (click)="onAddItem()"
+    mat-mini-fab
+    color="primary"
+    [disabled]="nameInput == ''"
+  >
+    <mat-icon>add</mat-icon>
+  </button>
+  <div *ngIf="loading">Loading...</div>
+  <ul>
+    <div *ngFor="let item of categoryList">
+      <app-category-list-item [item]="item"> </app-category-list-item>
+    </div>
+  </ul>
+  <div>
+    <button (click)="onSave()" mat-raised-button>Save</button>
+    <button (click)="onLoad()" mat-raised-button>Load</button>
+  </div>
+</div>
