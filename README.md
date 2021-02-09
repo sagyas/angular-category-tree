@@ -4,7 +4,7 @@ Infinite Category Tree List.
 
 ![alt text](./assets/category-tree.png "App")
 
-This Angular project was created using `ng new`.  
+This Angular 11 project was created using `ng new`.  
 This project is using Firestore.
 
 ## Run
