@@ -15,7 +15,8 @@ This project is using Firestore.
 
 1. Run:  
    `$ ng serve`
-2. Open browser on http://localhost:4200/
+2. Open browser on:  
+http://localhost:4200/
 
 ## Screenshots
 
