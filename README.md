@@ -1,7 +1,7 @@
 # Category Tree
 
 Infinite Category Tree List.  
-This Angular project was created using `ng new`.  
+This Angular project was created using `$ ng new`.  
 This project is using Firestore.
 
 ## Installation
