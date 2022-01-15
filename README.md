@@ -1,4 +1,4 @@
-# Category Tree
+# Category Tree in Angular
 
 Infinite Category Tree List.  
 This Angular project was created with `$ ng new`.  
